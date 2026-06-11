@@ -1,0 +1,26 @@
+# Created with WinGet Releaser using komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ChristopherHotchkiss.SkylanderPortalController
+PackageVersion: 1.9.11
+InstallerLocale: en-US
+InstallerType: wix
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: '{B653B0ED-9E93-486B-B6C1-8A1924E948A3}'
+ReleaseDate: 2026-06-11
+AppsAndFeaturesEntries:
+- ProductCode: '{B653B0ED-9E93-486B-B6C1-8A1924E948A3}'
+  UpgradeCode: '{E6FC979F-32C8-48C9-92BF-5CFFDF544D5E}'
+InstallationMetadata:
+  DefaultInstallLocation: '%ProgramFiles%\Skylander Portal Controller'
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/chotchki/skylander-portal-controller/releases/download/v1.9.11/skylander-portal-controller-1.9.11-windows-x86_64.msi
+  InstallerSha256: C62B8FC956A49833060A2D299A7594599FAA97D1C886D21AF51F0B733F91C14C
+ManifestType: installer
+ManifestVersion: 1.12.0
